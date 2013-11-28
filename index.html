@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <style>
+        html, body { height: 200%; }
+
+        header,
+        footer {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            height: 64px;
+        }
+
+        header {
+            top: 0;
+            background: tomato
+        }
+
+        footer {
+            bottom: 0;
+            background: #111
+        }
+    </style>
+
+    <title>Veil.js</title>
+</head>
+<body>
+    <header></header>
+    <footer></footer>
+
+    <script src="veil.js"></script>
+    <script>
+        var header = document.querySelector('header');
+        var footer = document.querySelector('footer');
+        var hasTouch = 'ontouchstart' in window;
+
+        if (!hasTouch) {
+            Veil(header);
+            Veil(footer, {
+                prop: 'bottom'
+            });
+        }
+    </script>
+</body>
+</html>
