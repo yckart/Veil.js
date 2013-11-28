@@ -1,5 +1,5 @@
 #No *full* documentation yet!
-##Take a look at the [index.html](https://github.com/yckart/Veil.js/master/index.html)!
+##Take a look at the [example](https://github.com/yckart/Veil.js/blob/master/index.html)!
 
 http://yckart.github.io/Veil.js
 
